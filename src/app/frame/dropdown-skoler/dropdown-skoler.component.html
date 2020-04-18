@@ -1,0 +1,10 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+
+  <select formControlName="name">
+    <option disabled>Vælg skole</option>
+    <option>Vælg skole</option>
+    <option *ngFor="let skole of skoler">{{skole}}</option>
+  </select>
+
+  <button>Submit</button>
+</form>
